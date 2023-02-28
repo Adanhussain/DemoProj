@@ -1,0 +1,79 @@
+<app-header></app-header>
+<section class="section-margin"> 
+  <form [formGroup]="blogForm" >
+      <div class="container">
+        <div class="row content">
+          <div class="content-titulo">
+            <h1 style="text-align: center;">Blog Form</h1>
+            
+          </div>
+          <!-- <div class="mb-3">
+            <label  class="form-label">Name:</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Enter the author name" >
+            </div>
+            <div class="text-danger alert alert-danger" *ngIf="name && (name.touched && name.invalid)">
+                Name is required   
+            </div> -->
+          <div class="col-12">
+            <div class="mb-3">
+              <label  class="form-label">Image:</label>
+              <input type="file" formControlName="image" class="form-control"  (change)="OnFileChanged($event)"> 
+            </div>
+            <div class="text-danger alert alert-danger" *ngIf="image && (image.touched && image.invalid)">
+                Image is required   
+            </div>
+          </div>
+          <!-- <div class="col-6">
+            <div class="mb-3">
+              <label  class="form-label">E-mail:</label>
+              <input type="text"  formControlName="email" class="form-control" placeholder="Enter your e-mail" readonly/>
+              <div class="text-danger alert alert-danger" *ngIf="email && (email.touched && email.invalid)">
+                  Email is required   
+              </div>
+        
+            </div>
+          </div> -->
+           <div class="col-6">
+            <div class="mb-3">
+              <label  class="form-label">Category:</label>
+              <select formControlName="category">
+            <option [ngValue]="null" disabled>--Select Category---</option>
+            <option *ngFor="let category of categoryOfBlogs" [ngValue]="category.name">{{category.name}}</option>
+          </select>
+            </div>
+          </div>
+          
+          <div class="col-6">
+            <div class="mb-3">
+              <label  class="form-label">Blog Title:</label>
+              <input type="text" formControlName="blog_title" class="form-control" placeholder="Enter Blog Title">
+              <div class="text-danger alert alert-danger" *ngIf="blog_title && (blog_title.touched && blog_title.invalid)">
+                Blog-Title is required   
+            </div>
+            </div>
+          </div>
+         
+        
+          <div class="mb-3">
+            <label class="form-label">Enter the content here:</label>
+            <textarea type="textarea" formControlName="Blog_Content" class="form-control"  rows="5">
+                
+            </textarea>
+            <div class="text-danger alert alert-danger" *ngIf="Blog_Content && (Blog_Content.touched && Blog_Content.invalid)">
+                Blog-Content is required   
+            </div>
+            <br>
+            <div class="col-auto">
+              <button class="btn btn-b-n first" onclick="myFunction()" *ngIf='status=="post"' (click)="onSubmit('post')" [disabled]="blogForm.invalid">Post</button>
+              <button class="btn btn-b-n first" onclick="myFunctions()" *ngIf='status=="update"' (click)="onSubmit('update')" [disabled]="blogForm.invalid">Update</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </form>
+    <div id="snackbar">Blog Create Successfully</div>
+    <div id="snackbar-update">Blog Update Successfully</div>
+    
+</section>

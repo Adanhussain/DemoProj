@@ -1,0 +1,3 @@
+.watermark .leftwatermark >>> :host{
+    position: relative !important;
+}

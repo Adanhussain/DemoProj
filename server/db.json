@@ -1,0 +1,132 @@
+{
+  "posts": [
+    {
+      "image": "agent-4.jpg",
+      "blog_title": "The world's 50 most powerful blogs",
+      "Blog_Content": "The history of political blogging might usefully be divided into the periods pre- and post-Huffington. Before the millionaire socialite Arianna Huffington decided to get in on the act, bloggers operated in a spirit of underdog solidarity. They hated the mainstream media - and the feeling was mutual.\nBloggers saw themselves as gadflies, pricking the arrogance of established elites from their home computers, in their pyjamas, late into the night. So when, in 2005, Huffington decided to mobilise her fortune and media connections to create, from scratch, a flagship liberal blog she was roundly derided. Who, spluttered the original bloggerati, did she think she was?\n\nBut the pyjama purists were confounded. Arianna's money talked just as loudly online as off, and the Huffington Post quickly became one of the most influential and popular journals on the web. It recruited professional columnists and celebrity bloggers. It hoovered up traffic. Its launch was a landmark moment in the evolution of the web because it showed that many of the old rules still applied to the new medium: a bit of marketing savvy and deep pockets could go just as far as geek credibility, and get there faster.",
+      "category": "Development",
+      "id": 1
+    },
+    {
+      "image": "agent-6.jpg",
+      "blog_title": "Boing Boing",
+      "Blog_Content": "Bloggers saw themselves as gadflies, pricking the arrogance of established elites from their home computers, in their pyjamas, late into the night. So when, in 2005, Huffington decided to mobilise her fortune and media connections to create, from scratch, a flagship liberal blog she was roundly derided. Who, spluttered the original bloggerati, did she think she was?\n\nBut the pyjama purists were confounded. Arianna's money talked just as loudly online as off, and the Huffington Post quickly became one of the most influential and popular journals on the web. It recruited professional columnists and celebrity bloggers. It hoovered up traffic. Its launch was a landmark moment in the evolution of the web because it showed that many of the old rules still applied to the new medium: a bit of marketing savvy and deep pockets could go just as far as geek credibility, and get there faster.",
+      "category": "Development",
+      "id": 2
+    },
+    {
+      "image": "agent-3.jpg",
+      "blog_title": "AGENT-3",
+      "Blog_Content": "AGENT-3",
+      "category": "Development",
+      "id": 3
+    },
+    {
+      "image": "agent-3.jpg",
+      "blog_title": "agent-3",
+      "Blog_Content": "agent-3 uuuu",
+      "category": "Graphics",
+      "email": "test11@test.com",
+      "name": "a",
+      "id": 4
+    },
+    {
+      "image": "Government_College_University,Logo.png",
+      "blog_title": "this is the title of blog",
+      "Blog_Content": "here are some content of the blog............",
+      "category": "Development",
+      "email": "adanhussain12@gmail.com",
+      "name": "a",
+      "date": 28,
+      "id": 5
+    }
+  ],
+  "register": [
+    {
+      "name": "a",
+      "email": "a",
+      "password": "a",
+      "id": 1
+    },
+    {
+      "name": "adan",
+      "email": "adan@gmail.com",
+      "password": "Angular1",
+      "id": 2
+    },
+    {
+      "your_name": "a",
+      "password": "a",
+      "email": "a",
+      "id": 3
+    },
+    {
+      "your_name": "adan",
+      "password": "adanaaa",
+      "email": "adan@gmail.com",
+      "id": 4
+    },
+    {
+      "your_name": "a",
+      "password": "111111",
+      "email": "test@test.com",
+      "id": 5
+    },
+    {
+      "your_name": "adan",
+      "password": "111111",
+      "email": "test1@test.com",
+      "id": 6
+    },
+    {
+      "your_name": "adan",
+      "password": "111111",
+      "email": "test11@test.com",
+      "id": 7
+    },
+    {
+      "your_name": "test-user",
+      "password": "111111",
+      "email": "test-user@test.com",
+      "id": 8
+    },
+    {
+      "your_name": "adan",
+      "password": "111111",
+      "email": "test123@test.com",
+      "id": 9
+    },
+    {
+      "your_name": "adan",
+      "password": "111111",
+      "email": "test22@test.com",
+      "id": 10
+    },
+    {
+      "your_name": "Abubakar",
+      "password": "121212",
+      "email": "abubakar@gmail.com",
+      "id": 11
+    },
+    {
+      "your_name": "adan hussain",
+      "password": "adanhussain12",
+      "email": "adanhussain12@gmail.com",
+      "id": 12
+    },
+    {
+      "your_name": "adan hu",
+      "password": "qwerty123",
+      "email": "adan@ventech.com",
+      "id": 13
+    }
+  ],
+  "message": [
+    {
+      "name": "a",
+      "email": "a",
+      "contactNo": "a",
+      "message": 1
+    }
+  ]
+}

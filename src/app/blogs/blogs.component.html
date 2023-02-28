@@ -1,0 +1,46 @@
+<!-- <section class="section-margin row">
+<div class="card col-md-3" style="width: 20rem;" *ngFor="let blog of blogs">
+    <img class="card-img-top" src="assets/img/{{blog.image}}" alt="Card image cap" style="width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title">{{blog.blog_title}}</h5>
+      <p class="card-text">{{blog.Blog_Content}}</p>
+      <a routerLink="/single-blog/{{blog.id}}" class="btn btn-b-n">Read More</a>
+    </div>
+  </div>
+</section> -->
+<app-header [blogsUpdate]="headerReload"></app-header>
+<h1  style="margin-top: 350px;" *ngIf="blogEmpty">There is no blog.Create a blog to Explore &#128512;</h1>
+<div class="container section-margin">
+  <div class="row">
+    
+    <div class="col-md-4" *ngFor="let blog of usersBlogs | reverse">
+      
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <a href="#"> <img class="img" src="assets/img/{{blog.image}}"> </a>
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        
+        <h4 class="blog-card-caption">
+            <a href="#">{{blog.blog_title}}</a>
+        </h4>
+        <h4 class="blog-card-caption">
+          {{blog.name}} 
+      </h4>
+        <p class="blog-card-description">{{blog.date |date:'dd-MM-yyyy'}}</p>
+        <div class="ftr">
+            <div class="author">
+                
+                <button class="btn btn-primary" routerLink="/create-blog/{{blog.id}}">edit</button>
+                &nbsp;
+                <button class="btn btn-danger" (click)="delete(blog.id)">Delete</button>
+              
+            </div>
+            <div class="stats"> <i class="far fa-clock"></i> {{blog.category}}</div>
+        </div>
+    </div>
+</div>
+</div>
+  </div>
+</div>

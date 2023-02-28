@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+
+
+
+
+
+
+<div class="container section-margin">
+ 
+  <div class="container blog-search-margin">
+    <!-- <input type="text" placeholder="Search By Blog-Title" [(ngModel)]="searchFilter"  class="col-md-6">
+   -->
+   <a></a>
+    <div class="search-box">
+      <button class="btn-search"><i class="bi bi-search"></i></button>
+      <input type="text" class="input-search" [(ngModel)]="searchFilter" placeholder="Type to Search Blog-Title..." >
+    {{blogs.length}} Blogs
+      </div>
+      
+  </div>
+  <div class="row">
+    <div class="col-md-4 "
+      *ngFor="let blog of blogs | reverse | paginate: { itemsPerPage: 9, currentPage: p } |filter:searchFilter">
+      <div class="blog-card blog-card-blog">
+        <div class="blog-card-image">
+          <a href="#"> <img class="img" src="assets/img/{{blog.image}}"> </a>
+          
+          <div class="ripple-cont"></div>
+        </div>
+        <div class="blog-table">
+        
+          <h4 class="blog-card-caption">
+            <a href="#">{{blog.blog_title}}</a>
+          </h4>
+          <p class="blog-card-description">Category : {{blog.category}} </p>
+          <p class="blog-card-description"> Author : {{blog.name}}</p>
+          <div class="ftr">
+            <div class="author">
+
+              <button routerLink="/single-blog/{{blog.id}}" class="btn btn-b-n">Read More</button>
+
+              &nbsp;
+
+
+            </div>
+            <div class="stats"> <i class="far fa-clock"></i>{{blog.date |date:'dd-MM-yyyy'}} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<pagination-controls (pageChange)="p = $event" class="float-right">
+</pagination-controls>
